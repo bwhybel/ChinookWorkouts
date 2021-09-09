@@ -1,0 +1,10 @@
+<h1><%= @workout.title %></h1>
+
+<p><%= @workout.group %></p>
+
+<ul>
+  <li><%= link_to "Edit", edit_workout_path(@workout) %></li>
+  <li><%= link_to "Destroy", workout_path(@workout),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>
+</ul>
